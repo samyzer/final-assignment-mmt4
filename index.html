@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video-js.css"> 
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="js/script.js"> </script>
+    <script src="js/video.js"> </script>
+    <script src="js/jquery-3.4.1.js"> </script>
+    <script src="js/jquery-ui.js"> </script>
+</head>
+
+<body>
+    <header>
+        <section class="navigation"> 
+            <a href=""> ABOUT ME</a>
+            <a href="singlepage.html"> PORTFOLIO</a>
+            <a href=""> CONTACT</a>
+        </section>
+
+        <div class="tekstblokheader">
+            <h1 class="titleheader"> Hi, my name is Vince <br> I code and design cool stuff </h1>
+            <p class="tekstheader"> Aenean eu leo quam. Pellentesque ornare sem lacinia <br> quam venenatis vestibulum. 
+            Etiam porta sem <br> malesuada magna mollis euismod. </p>
+
+            <img class="profielfoto" src="img/header/giorgio-encinas-781653-unsplash 2.jpeg" alt="portret foto"> 
+        </div>
+
+        
+
+        <div id="slideshow"> 
+            <div> <img class="fotoheader" src="img/header/8b421263811603.5abcf34fb63f5.jpg" alt="bloemen"> </div> 
+            <div> <img class="fotoheader" src="img/header/cf13d664115037.5ac7605c8782f.jpg" alt="schedel"> </div>
+            <div> <img class="fotoheader" src="img/header/c9c6be64785095.5af0b88da3d37.jpg" alt="art"> </div>
+            <div> <img class="fotoheader" src="img/header/af246165614959.5afab677e5b61.png" alt="art"> </div>
+        </section>
+   </header> 
+
+    <main>
+        <section class="videosection"> 
+            <div class="achtergrondblok">
+                <h2 class="titlevideo"> Get to know me </h2>
+
+                <div class="video">
+                    <div class="buttons">
+                        <button class="rewind" id="rewind"></button>
+                        <button class="toggle1" id="toggle1"></button>
+                    </div>
+                    
+                    <video class="video-js" id='video1' data-setup='{}'>
+                    <source src="video/Video.mp4" type=video/mp4> 
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfoliosection"> 
+            <p class="titleportfolio"> featured portfolio </p>
+
+            <div class="portfolio1"> 
+                <img class="foto" src="img/grid/99f90c62250151.5a8c4af37fed6.gif" alt="gif">
+                    
+                <div class="overlay">
+                    <a class="nameportfolios" href="singlepage.html"> Digital Thinkers Conference </a>
+                    <div class="tagsblok1"> <p class="tags"> #client </p> </div>
+                    <div class="tagsblok2"> <p class="tags"> #design </p> </div>
+                    <div class="tagsblok3"> <p class="tags"> #code </p> </div>
+                </div>
+            </div>
+
+            <div class="portfolio2"> 
+                <img class="foto" src="img/grid/01b8e164052935.5ac54848589e1.jpeg" alt="books">
+
+                <div class="overlay">
+                    <a class="nameportfolios" href="singlepage.html"> Patsy </a>   
+                    <div class="tagsblok1"> <p class="tags"> #books </p> </div>
+                    <div class="tagsblok2"> <p class="tags"> #art </p> </div>
+                    <div class="tagsblok3"> <p class="tags"> #reading </p> </div>
+                </div>
+            </div>
+
+            <div class="portfolio3"> 
+                <img class="foto" src="img/grid/a8866c65593285.5af9f0d2822be.gif" alt="tafel met plant">
+
+                <div class="overlay">
+                    <a class="nameportfolios" href="singlepage.html"> Flower Power </a>    
+                    <div class="tagsblok1"> <p class="tags"> #design </p> </div>
+                    <div class="tagsblok2"> <p class="tags"> #flowers </p> </div>
+                    <div class="tagsblok3"> <p class="tags"> #art </p> </div>
+                </div>
+            </div>
+
+            <div class="portfolio4"> 
+                <img class="foto" src="img/grid/verplicht item 2.jpg" alt="driehoekjes">
+
+                <div class="overlay">
+                    <a class="nameportfolios" href="singlepage.html"> Working with <br> P5 </a>    
+                    <div class="tagsblok1"> <p class="tags"> #p5 </p> </div>
+                    <div class="tagsblok2"> <p class="tags"> #creative </p> </div>
+                    <div class="tagsblok3"> <p class="tags"> #code </p> </div>
+                </div>
+            </div>
+
+            <div class="portfolio5"> 
+                <img class="foto" src="img/grid/verplicht item 1.jpg" alt="patroon">
+
+                <div class="overlay">
+                    <a class="nameportfolios" href="singlepage.html"> Hello Africa </a>     
+                    <div class="tagsblok1"> <p class="tags"> #art </p> </div>
+                    <div class="tagsblok2"> <p class="tags"> #colors </p> </div>
+                    <div class="tagsblok3"> <p class="tags"> #design </p> </div>
+                </div>
+            </div>
+
+            <div class="portfolio6"> 
+                <img class="foto" src="img/grid/d97bfd65388399.5af29f33e6beb 2.jpg" alt="blokjes">
+
+                <div class="overlay">
+                    <a class="nameportfolios" href="singlepage.html"> Creative Design </a>    
+                    <div class="tagsblok1"> <p class="tags"> #design </p> </div>
+                    <div class="tagsblok2"> <p class="tags"> #art </p> </div>
+                    <div class="tagsblok3"> <p class="tags"> #creative </p> </div>
+                </div>
+            </div>
+
+            <button class="buttonportfolio"> MORE PORTFOLIO </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="tekstblokfooter"> 
+            <h1 class="titlefooter"> What can I do for you? <br> Let's get in touch </h1>
+            <button class="buttonfooter"> CONTACT </button>
+        </section>
+
+        <div id="toggle"> 
+            <button class="togglebutton1"> </button>
+
+            <h2 class="toggletitle"> Stuur me een bericht! </h2>
+            
+            <p class="toggletekst1"> Naam </p>
+            <input id="blok1">
+
+            <p class="toggletekst2"> Email </p>
+            <input id="blok2">
+
+            <p class="toggletekst2"> Bericht </p>
+            <input id="blok3">
+
+            <button class="togglebutton2"> Verzenden </button>
+
+            <h2 class="toggletekst4"> Vince Robinson </h2>
+            <h3 class="toggletekst5"> Vince.robinson@gmail.com </h3>
+            <h3 class="toggletekst6"> +31 6 12345678 </h3>
+        </div>
+    </footer>
+</body>
+</html>

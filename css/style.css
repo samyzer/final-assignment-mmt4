@@ -1,0 +1,983 @@
+body {
+    max-width: 100%;
+}
+
+header {
+    max-width: 100%;
+    height: 650px;
+    background-image: linear-gradient(#0076FF, #FFAFE3);
+    top: 0;
+    margin-top: 0px;
+    z-index: 0;
+}
+
+.navigation {
+    margin-left: 60%;
+    margin-top: 35px;
+    z-index: 2;
+    position: absolute;
+}
+
+a {
+    color: #FFAFE3;
+    font-size: 1.1em;
+    margin-left: 50px;
+    font-family: 'Montserrat', Bold;
+    text-decoration: none;
+}
+
+.tekstblokheader {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 15%;
+    margin-right: 10%;
+    z-index: 1;
+}
+
+.profielfoto {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;  
+    float: left;
+    margin-top: 40px;
+    margin-left: 4%;
+}
+
+.titleheader {
+    font-size: 3em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    margin-right: 13%;
+    float: right; 
+}
+
+.tekstheader {
+    font-size: 1.2em; 
+    color: white; 
+    margin-top: 50px;
+    font-family: 'Montserrat', Medium;
+    margin-right: 27%;
+    float: right;
+}
+
+.fotoheader {
+    width: 105%;
+    height: 650px;
+    object-fit: cover;
+    opacity: .4;
+    z-index: 1;
+}
+
+#slideshow { 
+    position: absolute; 
+    width: 100%; 
+    height: 650px;
+}
+  
+#slideshow > div { 
+    position: absolute;  
+}
+  
+.videosection {
+    height: 530px;
+    width: 100%;
+    background: #F8F5F5;
+}
+    
+.achtergrondblok {
+    height: 500px;
+    width: 60%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: -100px;
+}
+
+.titlevideo {
+    margin-left: 2%;
+    margin-top: 15px;
+    font-size: 0.9em; 
+    color: white;
+    font-family: 'Montserrat', Bold; 
+    position: absolute;
+    z-index: 2;
+}
+
+.video-js {
+    height: 580px;
+    width: 100%;
+}
+
+.video:hover .buttons{ 
+    opacity: 1;
+}
+
+.buttons {
+    margin-top: 25%;
+    margin-left: 35%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#toggle1 {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/buttons/play@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 50px;
+}
+
+#rewind {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/buttons/rewind@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 50px;
+}
+
+.titleportfolio{
+    margin-left: 46%;
+    margin-top: 15px;
+    font-size: 0.9em; 
+    color: #FFAFE3;
+    font-family: 'Montserrat', Bold; 
+}
+
+.portfoliosection {
+    height: 990px;
+    background: #F8F5F5;
+    margin-top: -20px;
+}
+
+.portfolio1 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin-top: 3%;
+    margin-left: 12%;
+    float: left;
+}
+
+.portfolio2 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin-top: 3%;
+    margin-left: 38%; 
+}
+
+.portfolio3 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin-top: 3%;
+    margin-left: 64%; 
+}
+
+.portfolio4 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin-top: 29%;
+    margin-left: 12%;
+    float: left;
+}
+
+.portfolio5 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin-top: 29%;
+    margin-left: 38%; 
+}
+
+.portfolio6 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin-top: 29%;
+    margin-left: 64%; 
+}
+
+.foto {
+    height: 350px;
+    width: 350px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s ease;
+    background-color: #0076FF;
+}
+
+.portfolio1:hover .overlay{
+    opacity: 0.9;
+}
+
+.portfolio2:hover .overlay{
+    opacity: 0.9;
+}
+
+.portfolio3:hover .overlay{
+    opacity: 0.9;
+}
+
+.portfolio4:hover .overlay{
+    opacity: 0.9;
+}
+
+.portfolio5:hover .overlay{
+    opacity: 0.9;
+}
+
+.portfolio6:hover .overlay{
+    opacity: 0.9;
+}
+
+.nameportfolios {
+    font-size: 2.3em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.tagsblok1 {
+    height: 35px;;
+    width: 130px;
+    margin-top: 60%;
+    margin-left: 10%;
+    background: #FFAFE3;
+    border-radius: 10%;
+    position: absolute;
+}
+
+.tagsblok2 {
+    height: 35px;;
+    width: 130px;
+    margin-top: 75%;
+    margin-left: 10%;
+    background: #FFAFE3;
+    border-radius: 10%;
+    position: absolute;
+}
+
+.tagsblok3 {
+    height: 35px;;
+    width: 130px;
+    margin-top: 75%;
+    margin-left: 55%;
+    background: #FFAFE3;
+    border-radius: 10%;
+    position: absolute;
+}
+
+.tags{
+    font-size: 1.6em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    text-align: center;
+}
+
+.buttonportfolio {
+    margin-left: 45%;
+    margin-top: 57%;
+    height: 35px;
+    width: 160px;
+    font-family: 'Montserrat', Bold;  
+    color: #FFAFE3;
+    background: #0076FF;
+}
+
+footer {
+    background: #0076FF;
+    height: 280px;
+}
+
+.tekstblokfooter {
+    margin-left: 32%;
+    margin-top: 20px;
+    z-index: 1;
+    position: absolute;
+    height: 230px;
+    width: 550px;
+}
+
+.titlefooter {
+    font-size: 3em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.buttonfooter {
+    margin-left: 43%;
+    margin-top: 32%;
+    height: 30px;
+    width: 70px;
+    font-family: 'Montserrat', Bold;  
+    color: #FFAFE3;
+    background: #0076FF;
+}
+
+#toggle {
+    width: 524px;
+    height: 736px;
+    background-image: linear-gradient(#0076FF, #FFAFE3);
+    position: absolute;
+    margin-top: -456px;
+    z-index: 1;
+    display: none;
+}
+
+.togglebutton1 {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/buttons/close@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    margin-top: 4%;
+    margin-left: 90%;
+}
+
+.toggletitle {
+    font-size: 2.3em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.toggletekst1 {
+    font-size: 1em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+#blok1 {
+    width: 77%;
+    height: 35px;
+    background: white;
+    margin-left: 10%;
+    margin-top: 25%;
+}
+
+.toggletekst2 {
+    font-size: 1em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#blok2 {
+    width: 77%;
+    height: 35px;
+    background: white;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+#blok3 {
+    width: 77%;
+    height: 150px;
+    background: white;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.togglebutton2 {
+    margin-left: 10%;
+    margin-top: 6%;
+    height: 30px;
+    width: 100px;
+    font-family: 'Montserrat', Bold; 
+    font-size: 0.9em;  
+    color: white;
+    background: #0076FF;
+}
+
+.toggletekst4 {
+    font-size: 1.5em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.toggletekst5 {
+    font-size: 0.9em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    position: absolute;
+    margin-left: 11%;
+    margin-top: 12%;
+}
+
+.toggletekst6 {
+    font-size: 0.9em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    position: absolute;
+    margin-left: 11%;
+    margin-top: 17%;
+}
+
+.titleheadersingle{
+    font-size: 3em; 
+    color: white; 
+    font-family: 'Montserrat', Bold;
+    margin-left: 30%;
+    margin-top: 15%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.introsection {
+    height: 250px;
+    width: 100%;
+    
+}
+    
+.achtergrondbloksingle {
+    height: 400px;
+    width: 60%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: -150px;
+    background: white;
+}
+
+.tekstintro {
+    font-size: 1.2em; 
+    color: black; 
+    margin-top: 50px;
+    font-family: 'Montserrat', Medium;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.p5section {
+    height: 1100px;
+    width: 100%;
+}
+
+.p5Canvas {
+    margin-left: 23%;
+    margin-top: -80%;
+    float: left;
+}
+
+#slider1, #slider2, #slider3 {
+    -webkit-appearance: none;
+    width: 54%;
+    background: #0076FF;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 23%;
+    margin-top: 3%;
+}
+
+.responsive {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {    
+    a {
+        font-size: 1.1em;
+        margin-left: 25px;
+    }
+
+    .tekstblokheader {
+        margin-top: 200px;
+        margin-left: 20%;
+        margin-right: 5%;
+    }
+
+    .profielfoto {
+        width: 120px;
+        height: 120px;
+        margin-top: 50px;
+        margin-left: 0%;
+    }
+
+    .titleheader {
+        font-size: 2.3em; 
+        margin-right: 17%;
+        margin-top: 10px;
+     }
+
+    .tekstheader {
+        font-size: 1.2em;  
+        margin-top: 40px;
+        margin-right: 17%;
+    }
+    
+    .videosection {
+        height: 400px;
+    }
+    .video-js {
+        height: 450px;
+    }
+
+    .portfoliosection {
+        height: 830px;
+    }
+
+    .portfolio1 {
+        height: 300px;
+        width: 300px;
+        margin-left: 5%;
+    }
+    
+    .portfolio2 {
+        height: 300px;
+        width: 300px;
+        margin-left: 36%; 
+    }
+    
+    .portfolio3 {
+        height: 300px;
+        width: 300px;
+        margin-left: 67%; 
+    }
+    
+    .portfolio4 {
+        height: 300px;
+        width: 300px;
+        margin-top: 35%;
+        margin-left: 5%;
+    }
+    
+    .portfolio5 {
+        height: 300px;
+        width: 300px;
+        margin-top: 35%;
+        margin-left: 36%; 
+    }
+    
+    .portfolio6 {
+        height: 300px;
+        width: 300px;
+        margin-top: 35%;
+        margin-left: 67%; 
+    }
+
+    .foto {
+        height: 300px;
+        width: 300px;
+    }
+
+    .buttonportfolio {
+        margin-top: 68%;
+        margin-left: 43.5%; 
+    }
+
+    .titlefooter {
+        font-size: 2.3em; 
+    }
+    
+    .buttonfooter {
+        margin-left: 30%;
+        margin-top: 27%;
+    }
+
+    .titleheadersingle {
+        margin-left: 22%;
+    }
+
+    .introsection {
+        height: 320px;
+    }
+
+    .p5section {
+        height: 1100px;
+    }
+    
+    .p5Canvas {
+        margin-left: 10%;
+        margin-top: -105%;
+    }
+}
+
+@media only screen and (max-width: 768px) {    
+    .navigation {
+        margin-left: 50%;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    .profielfoto {
+        display: none;
+    }
+    
+    .videosection {
+        height: 300px;
+    }
+    .video-js {
+        height: 350px;
+    }
+
+    .buttons {
+        margin-top: 30%;
+        margin-left: 30%;
+    }
+
+    .titleportfolio{
+        margin-left: 40%;
+    }
+
+    .portfoliosection {
+        height: 1200px;
+    }
+
+    .portfolio1 {
+        margin-left: 9%;
+    }
+    
+    .portfolio2 {
+        margin-left: 52%; 
+    }
+    
+    .portfolio3 {
+        margin-left: 9%; 
+        margin-top: 45%;
+    }
+    
+    .portfolio4 {
+        margin-top: 45%;
+        margin-left: 52%;
+    }
+    
+    .portfolio5 {
+        margin-top: 87%;
+        margin-left: 9%; 
+    }
+    
+    .portfolio6 {
+        margin-top: 87%;
+        margin-left: 52%; 
+    }
+
+    .buttonportfolio {
+        margin-top: 135%;
+        margin-left: 40%; 
+    }
+
+    .tekstblokfooter {
+        margin-left: 25%;
+    }
+
+    .titleheadersingle {
+        margin-left: 22%;
+        font-size: 2.3em;
+        margin-top: 30%;
+    }
+
+    .introsection {
+        height: 500px;
+    }
+
+    .p5section {
+        height: 130px;
+    }
+    
+    .p5Canvas {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .responsive {
+        height: 100px;
+        width: 45%;
+        background: #0076FF;
+        font-size: 1.5em; 
+        color: white; 
+        font-family: 'Montserrat', Medium;
+        text-align: center;
+        display: block;
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (max-width: 500px) {    
+    .navigation {
+        margin-left: 25%;
+    }
+
+    .tekstheader {
+        font-size: 1em;  
+    }
+    
+    .tekstblokheader {
+        margin-top: 150px;
+    }
+
+    .videosection {
+        height: 230px;
+    }
+    .video-js {
+        height: 250px;
+    }
+
+    .buttons {
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+
+    .titleportfolio{
+        margin-left: 40%;
+    }
+
+    .portfoliosection {
+        height: 2100px;
+    }
+
+    .portfolio1 {
+        margin-left: 20%;
+    }
+    
+    .portfolio2 {
+        margin-left: 20%; 
+        margin-top: 67%;
+    }
+    
+    .portfolio3 {
+        margin-left: 20%; 
+        margin-top: 132%;
+    }
+    
+    .portfolio4 {
+        margin-top: 197%;
+        margin-left: 20%;
+    }
+    
+    .portfolio5 {
+        margin-top: 263%;
+        margin-left: 20%; 
+    }
+    
+    .portfolio6 {
+        margin-top: 329%;
+        margin-left: 20%; 
+    }
+
+    .buttonportfolio {
+        margin-top: 400%;
+        margin-left: 35%; 
+    }
+
+    .tekstblokfooter {
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+
+    .titlefooter {
+        font-size: 2em; 
+    }
+
+    .buttonfooter {
+        margin-left: 25%;
+    }
+
+    .titleheadersingle {
+        margin-left: 13%;
+        font-size: 2em;
+        margin-top: 45%;
+    }
+
+    .introsection {
+        height: 330px;
+    }
+
+    .achtergrondbloksingle {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .tekstintro {
+        font-size: 1em;  
+        margin-top: 20px;
+    }
+
+    .p5section {
+        height: 200px;
+    }
+    
+    .p5Canvas {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .responsive {
+        height: 150px;
+        width: 45%;
+        background: #0076FF;
+        font-size: 1.5em; 
+        color: white; 
+        font-family: 'Montserrat', Medium;
+        text-align: center;
+        display: block;
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .navigation {
+        margin-left: 8%;
+    }
+    
+    a {
+        font-size: 1em;
+        margin-left: 25px;
+    }
+
+    .tekstblokheader {
+        margin-top: 160px;
+        margin-left: 25%;
+        margin-right: 5%;
+    }
+
+    .titleheader {
+        font-size: 1.5em; 
+        margin-right: 18.5%;
+        margin-top: 10px;
+     }
+
+    .tekstheader {
+        font-size: 0.8em;  
+        margin-top: 40px;
+        margin-right: 20%;
+    }
+
+    .videosection {
+        height: 150px;
+    }
+    .video-js {
+        height: 200px;
+    }
+
+    .buttons {
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+    
+    .titleportfolio{
+        margin-left: 40%;
+    }
+
+    .portfoliosection {
+        height: 2150px;
+    }
+
+    .portfolio1 {
+        margin-left: 10%;
+    }
+    
+    .portfolio2 {
+        margin-left: 10%; 
+        margin-top: 90%;
+    }
+    
+    .portfolio3 {
+        margin-left: 10%; 
+        margin-top: 180%;
+    }
+    
+    .portfolio4 {
+        margin-top: 270%;
+        margin-left: 10%;
+    }
+    
+    .portfolio5 {
+        margin-top: 360%;
+        margin-left: 10%; 
+    }
+    
+    .portfolio6 {
+        margin-top: 450%;
+        margin-left: 10%; 
+    }
+
+    .buttonportfolio {
+        margin-top: 540%;
+        margin-left: 28%; 
+    }
+
+    .tekstblokfooter {
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+
+    .titlefooter {
+        font-size: 1.5em; 
+    }
+
+    .buttonfooter {
+        margin-left: 18%;
+        margin-top: 23%;
+    }
+
+    .titleheadersingle {
+        margin-left: 13%;
+        font-size: 1.5em;
+        margin-top: 60%;
+    }
+
+    .introsection {
+        height: 450px;
+    }
+
+    .p5section {
+        height: 225px;
+    }
+
+    .responsive {
+        height: 180px;
+        width: 45%;
+        background: #0076FF;
+        font-size: 1.5em; 
+        color: white; 
+        font-family: 'Montserrat', Medium;
+        text-align: center;
+        display: block;
+        margin-left: 26%;
+    }
+}
